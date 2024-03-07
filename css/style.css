@@ -1,3 +1,8 @@
+:root{
+    --main-color: #9792E4; 
+}
+
+
 /* RESET */
 * {
     margin: 0;
@@ -33,6 +38,11 @@ a{
     margin: 0 auto;
 }
 
+.medium-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .wrap{
     flex-wrap: wrap;
 }
@@ -56,6 +66,10 @@ section{
 
 .w-90{
     width: 90%;
+}
+
+.background{
+    background-color: var(--main-color);
 }
 
 /* HEADER */
@@ -101,6 +115,7 @@ section{
     /* border: 1px solid black; */
 }
 
+
 /* Tablet and Desktop */
 @media screen and (min-width: 768px) {
 
@@ -113,5 +128,31 @@ section{
     }
 }
 
+
+/* Strategic Section */
+#strategic-section .columns{
+    width: 100%;
+    padding: 8px;
+}
+
+#strategic-section .card{
+
+    /* debug */
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    .medium-container{
+        width: 40%;
+    }
+
+    #strategic-section .columns{
+        width: 50%;
+    }
+    
+}
 
 /* FOOTER */
