@@ -11,16 +11,61 @@ img{
 
 ul{
     list-style-type: none;
+}
+
+a{
     color: inherit;
+    text-decoration: none;
 }
 
 /* COMMON */
 /* Layout */
+.flex{
+    display: flex;
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Utilities */
+.none{
+    display: none;
+}
 
+.gap-15{
+    gap: 15px;
+}
 
 /* HEADER */
+.header{
+    width: 100%;
+    background-color: #0084fd;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .main-container{
+        width: 50%;
+    }
+
+    .header-menu{
+        display: block;
+    }
+
+    .header-menu-btn{
+        display: none;
+    }
+
+}
 
 
 /* MAIN */
