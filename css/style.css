@@ -272,6 +272,7 @@ section{
 
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
 
     #cta-section .main-container{
@@ -281,3 +282,24 @@ section{
 }
 
 /* FOOTER */
+.footer{
+    background-color: #333333;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    
+    .footer .main-container{
+        width: 60%;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    .footer .main-container{
+        width: 30%;
+    }
+    
+}
