@@ -51,6 +51,11 @@ section{
     padding: 20px 0;
 }
 
+.txt-center{
+    text-align: center;
+}
+
+
 /* Utilities */
 .none{
     display: none;
@@ -151,6 +156,31 @@ section{
 
     #strategic-section .columns{
         width: 50%;
+    }
+    
+}
+
+/* Testimonial Section */
+.testimonial{
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tablet e Desktop */
+@media screen and (min-width: 768px) {
+
+    .testimonial{
+        display: flex;
+    }
+
+    .testimonial-img{
+        width: 20%;
+    }
+
+    .testimonial-desc{
+        width: 80%;
     }
     
 }
