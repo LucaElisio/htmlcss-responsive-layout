@@ -263,4 +263,21 @@ section{
 }
 
 
+/* CTA Section */
+@media screen and (min-width: 768px) {
+
+    #cta-section .main-container{
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #cta-section .main-container{
+        width: 40%;
+    }
+    
+}
+
 /* FOOTER */
