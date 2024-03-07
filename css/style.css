@@ -33,6 +33,14 @@ a{
     margin: 0 auto;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+section{
+    padding: 20px 0;
+}
+
 /* Utilities */
 .none{
     display: none;
@@ -40,6 +48,14 @@ a{
 
 .gap-15{
     gap: 15px;
+}
+
+.margin-btm-10{
+    margin-bottom: 10px;
+}
+
+.w-90{
+    width: 90%;
 }
 
 /* HEADER */
@@ -51,6 +67,7 @@ a{
     padding: 0 20px;
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
     
     .main-container{
@@ -69,6 +86,32 @@ a{
 
 
 /* MAIN */
+/* Hero Section */
+#hero-section .columns{
+    width: 100%;
+    padding: 8px;
+}
+
+#hero-section .card{
+    background-color: #B5DDFF;
+    border-radius: 10px;
+
+    /* debug */
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 768px) {
+
+    #hero-section .columns{
+        width: calc(100% / 3);
+    }
+
+    #hero-section .first{
+        width: calc(100% / 3 * 2 );
+    }
+}
 
 
 /* FOOTER */
