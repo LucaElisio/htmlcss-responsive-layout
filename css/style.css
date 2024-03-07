@@ -89,6 +89,7 @@ section{
 /* Desktop */
 @media screen and (min-width: 992px) {
     
+    /* ====== METTERE QUI O IN COMMON?? ======  */
     .main-container{
         width: 50%;
     }
@@ -123,6 +124,11 @@ section{
 
 /* Tablet and Desktop */
 @media screen and (min-width: 768px) {
+
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     #hero-section .columns{
         width: calc(100% / 3);
@@ -185,5 +191,8 @@ section{
     }
     
 }
+
+
+
 
 /* FOOTER */
