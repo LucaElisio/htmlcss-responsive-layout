@@ -1,5 +1,6 @@
 :root{
-    --main-color: #9792E4; 
+    --main-color: #9792E4;
+    --black: black; 
 }
 
 
@@ -55,6 +56,10 @@ section{
     text-align: center;
 }
 
+/* .inline-block{
+    display: inline-block;
+} */
+
 
 /* Utilities */
 .none{
@@ -77,6 +82,16 @@ section{
     background-color: var(--main-color);
 }
 
+.btn{
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+.c-black{
+    color: var(--black);
+}
+
 /* HEADER */
 .header{
     width: 100%;
@@ -84,13 +99,32 @@ section{
     line-height: 60px;
     height: 60px;
     padding: 0 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header-logo{
+    align-items: center;
+    width: 60px;
+}
+
+.header-menu-btn button{
+    border: 0;
+    background-color: transparent;
+}
+
+.menu-btn{
+    color: white;
+    font-size: 20px;
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
     
-    /* ====== METTERE QUI O IN COMMON?? ======  */
-    .main-container{
+    .header .main-container{
         width: 50%;
     }
 
@@ -106,6 +140,9 @@ section{
 
 
 /* MAIN */
+.main{
+    margin-top: 60px;
+}
 /* Hero Section */
 #hero-section .columns{
     width: 100%;
@@ -126,6 +163,7 @@ section{
 @media screen and (min-width: 768px) {
 
     #hero-section .main-container{
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -178,6 +216,10 @@ section{
 /* Tablet e Desktop */
 @media screen and (min-width: 768px) {
 
+    #testimonials-section .main-container{
+        width: 50%;
+    }
+
     .testimonial{
         display: flex;
     }
@@ -212,6 +254,7 @@ section{
 @media screen and (min-width: 768px) {
 
     #benefit-section .main-container{
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -247,6 +290,10 @@ section{
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+
+    #about-us-section .main-container{
+        width: 50%;
+    }
 
     #about-us-section .main-container{
         display: flex;
