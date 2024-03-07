@@ -125,7 +125,7 @@ section{
 /* Tablet and Desktop */
 @media screen and (min-width: 768px) {
 
-    .main-container{
+    #hero-section .main-container{
         display: flex;
         flex-wrap: wrap;
     }
@@ -156,7 +156,7 @@ section{
 /* Desktop */
 @media screen and (min-width: 992px) {
 
-    .medium-container{
+    #strategic-section .medium-container{
         display: flex;
         width: 40%;
     }
@@ -192,7 +192,44 @@ section{
     
 }
 
+/* Benefit Section */
+#benefit-section .columns{
+    width: 100%;
+    padding: 8px;
+}
 
+#benefit-section .card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+    /* debug */
+    /* height: 200px; */
+    border: 1px solid black;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+    #benefit-section .main-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefit-section .columns{
+        width: 50%;
+    }
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    #benefit-section .columns{
+        width: calc(100% / 3);
+    }
+    
+}
 
 
 /* FOOTER */
