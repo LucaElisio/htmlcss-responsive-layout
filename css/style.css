@@ -1,6 +1,7 @@
 :root{
     --main-color: #9792E4;
     --black: black; 
+    --blue: #0084FD;
 }
 
 
@@ -22,6 +23,10 @@ ul{
 a{
     color: inherit;
     text-decoration: none;
+}
+
+p{
+    line-height: 1.5em;
 }
 
 /* COMMON */
@@ -48,6 +53,10 @@ a{
     flex-wrap: wrap;
 }
 
+.align-end{
+    align-items: end;
+}
+
 section{
     padding: 20px 0;
 }
@@ -55,10 +64,6 @@ section{
 .txt-center{
     text-align: center;
 }
-
-/* .inline-block{
-    display: inline-block;
-} */
 
 
 /* Utilities */
@@ -82,14 +87,34 @@ section{
     background-color: var(--main-color);
 }
 
-.btn{
-    background-color: white;
+.btn-small{
     padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+.btn-large{
+    padding: 10px 18px;
     border-radius: 20px;
 }
 
 .c-black{
     color: var(--black);
+}
+
+h4{
+    font-size: 1.4rem;
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.c-white{
+    color: white;
+}
+
+.bg-white{
+    background-color: white;
 }
 
 /* HEADER */
@@ -120,6 +145,8 @@ section{
     color: white;
     font-size: 20px;
 }
+
+
 
 /* Desktop */
 @media screen and (min-width: 992px) {
@@ -152,18 +179,42 @@ section{
 #hero-section .card{
     background-color: #B5DDFF;
     border-radius: 10px;
+    padding: 20px 20px 20px 20px;
 
     /* debug */
-    height: 100px;
+    /* height: 100px; */
     /* border: 1px solid black; */
 }
 
+#hero-section .col-left,
+#hero-section .col-right{
+    width: 100%;
+}
 
-/* Tablet and Desktop */
+#hero-section .col-left *,
+#hero-section .card:not(.flex) *{
+    margin-bottom: 25px;
+}
+
+#hero-section h4{
+    color: var(--blue);
+}
+
+
+
+#hero-section .card .img{
+    margin-bottom: 0px; 
+}
+
+#hero-section .icons{
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+/* Tablet */
 @media screen and (min-width: 768px) {
 
     #hero-section .main-container{
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -174,6 +225,23 @@ section{
 
     #hero-section .first{
         width: calc(100% / 3 * 2 );
+    }
+
+    #hero-section .col-left{
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #hero-section .main-container{
+        width: 50%;
+    }
+    
+    #hero-section .col-left,
+    #hero-section .col-right{
+        width: 50%;
     }
 }
 
