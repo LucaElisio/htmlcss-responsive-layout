@@ -65,6 +65,9 @@ section{
     text-align: center;
 }
 
+.justify-center{
+    justify-content: center;
+}
 
 /* Utilities */
 .none{
@@ -179,7 +182,8 @@ h4{
 #hero-section .card{
     background-color: #B5DDFF;
     border-radius: 10px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 0px;
+    height: 100%;
 
     /* debug */
     /* height: 100px; */
@@ -191,9 +195,10 @@ h4{
     width: 100%;
 }
 
-#hero-section .col-left *,
-#hero-section .card:not(.flex) *{
-    margin-bottom: 25px;
+
+
+#hero-section *:not(.flex, .btn-large, img){
+    padding-bottom: 25px;
 }
 
 #hero-section h4{
@@ -202,8 +207,9 @@ h4{
 
 
 
-#hero-section .card .img{
-    margin-bottom: 0px; 
+#hero-section .col-right img{
+    margin-bottom: 0px;
+
 }
 
 #hero-section .icons{
@@ -231,8 +237,13 @@ h4{
         text-align: left;
     }
 
+    #hero-section img{
+        width: 50%;
+    }
+
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
 
     #hero-section .main-container{
@@ -242,6 +253,10 @@ h4{
     #hero-section .col-left,
     #hero-section .col-right{
         width: 50%;
+    }
+
+    #hero-section img{
+        width: 100%;
     }
 }
 
