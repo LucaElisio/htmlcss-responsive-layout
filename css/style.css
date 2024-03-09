@@ -412,24 +412,56 @@ h4{
 #benefit-section .card{
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
+    height: 100%;
 
     /* debug */
     /* height: 200px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+#benefit-section h2{
+    font-size: 2rem;
+    padding: 30px 0px;
+}
+
+#benefit-section h3{
+    font-size: 2rem;
+}
+
+#benefit-section h5{
+    font-size: 1.3rem;
+}
+
+#benefit-section .card h3, h5, p{
+    padding-bottom: 15px;
+}
+
+#benefit-section button{
+    border: 0;
+    background-color: var(--main-color);
+    padding: 10px 50px;
+    border-radius: 30px;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
 
     #benefit-section .main-container{
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
     }
 
     #benefit-section .columns{
         width: 50%;
+    }
+
+    #benefit-section .title{
+        margin: 0 auto;
+    }
+
+    #benefit-section h3{
+        font-size: 4rem;
     }
     
 }
