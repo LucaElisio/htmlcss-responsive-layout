@@ -154,6 +154,10 @@ h4{
     color: var(--main-color);
 }
 
+.in-block{
+    display: inline-block;
+}
+
 
 /* HEADER */
 .header{
@@ -482,30 +486,52 @@ h4{
     padding: 8px;
 }
 
-#about-us-section .card{
-
-    /* debug */
-    /* height: 200px; */
-    border: 1px solid black;
+#about-us-section h2, .image, h4, .btn-large, p{
+    margin-bottom: 20px;
 }
+
+#about-us-section h2{
+    font-size: 2rem;
+}
+
+#about-us-section .card img{
+    width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image{
+    display: inline-block;
+    position: relative;
+}
+
+.quote{
+    color: var(--main-color);
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-
-    #about-us-section .main-container{
-        width: 50%;
-    }
-
     #about-us-section .main-container{
         display: flex;
     }
 
+    #about-us-section h2{
+        font-size: 4rem;
+    }
+
     #about-us-section .columns-left{
-        width: 70%;
+        width: 60%;
     }
 
     #about-us-section .columns-right{
-        width: 30%;
+        width: 40%;
     }
     
 }
