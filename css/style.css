@@ -122,9 +122,7 @@ section{
     width: 35px;
     aspect-ratio: 1;
     border-radius: 50%;
-
 }
-
 
 .c-black{
     color: var(--black);
@@ -156,6 +154,10 @@ h4{
 
 .in-block{
     display: inline-block;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 
@@ -419,9 +421,6 @@ h4{
     padding: 30px;
     height: 100%;
 
-    /* debug */
-    /* height: 200px; */
-    /* border: 1px solid black; */
 }
 
 #benefit-section h2{
@@ -435,10 +434,6 @@ h4{
 
 #benefit-section h5{
     font-size: 1.3rem;
-}
-
-#benefit-section .card h3, h5, p{
-    padding-bottom: 15px;
 }
 
 #benefit-section button{
@@ -486,9 +481,6 @@ h4{
     padding: 8px;
 }
 
-#about-us-section h2, .image, h4, .btn-large, p{
-    margin-bottom: 20px;
-}
 
 #about-us-section h2{
     font-size: 2rem;
@@ -538,10 +530,25 @@ h4{
 
 
 /* CTA Section */
+
+#cta-section h3{
+    font-size: 2rem;
+}
+
+#cta-section h2{
+    font-size: 4rem;
+    color: rgb(255, 196, 0);
+}
+
+/* Tablet */
 @media screen and (min-width: 768px) {
 
     #cta-section .main-container{
         width: 70%;
+    }
+
+    #cta-section span{
+        display: block;
     }
 
 }
